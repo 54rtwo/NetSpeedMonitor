@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rtwo.netspeedmonitor">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/car"
+        android:theme="@style/AppTheme"
+        android:label="网速监控工具">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:label="网速监控工具"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".NetSpeedService"></service>
+        <activity
+            android:name=".NetSpeedChartActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+        </activity>
+</application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

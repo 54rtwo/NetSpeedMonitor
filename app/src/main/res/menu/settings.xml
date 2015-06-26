@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="settings"
+        android:icon="@drawable/menu"
+        android:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:title="删除加载数据"
+                android:id="@+id/delete_data"/>
+            <item
+                android:title="图表样式"
+                android:id="@+id/charttype">
+                <menu>
+                    <item
+                        android:title="线型图表"
+                        android:id="@+id/linechart"/>
+                    <item
+                        android:title="条型图表"
+                        android:id="@+id/barchart"/>
+                    <item
+                        android:title="散射图表"
+                        android:id="@+id/scatterchart"/>
+                    <item
+                        android:title="锯齿图表"
+                        android:id="@+id/cubechart"/>
+                </menu>
+            </item>
+            <item android:title="帮助" android:id="@+id/help"/>
+        </menu>
+    </item>
+</menu>
